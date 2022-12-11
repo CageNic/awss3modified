@@ -37,3 +37,10 @@ foreach $File (@Files) {
 	print "$FileName<BR>";
 	
 }
+Perl stat - getting the file access time
+
+To determine the last access (read) time of a file named foo.txt, use this sample Perl code:
+
+$filename = 'foo.txt';
+$last_access_time = (stat($filename))[8];
+print "$last_access_time\n";
